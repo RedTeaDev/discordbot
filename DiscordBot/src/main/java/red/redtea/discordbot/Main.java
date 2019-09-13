@@ -101,7 +101,7 @@ public class Main {
         Logger.getLogger("Teapot").info("TeaPot - Power By RedTea!");
         jda.getPresence().setPresence(OnlineStatus.DO_NOT_DISTURB, Activity.listening(" Bot Starting... "));
         Logger.getLogger("Teapot").info("JDA WebSocketClient - Connected to WebSocket");
-        try{Logger.getLogger("Teapot").info("Can NOT Login to Discord API,please check token or having rate limit?");} catch (Exception error){}
+        try{Logger.getLogger("Teapot").warning("Can NOT Login to Discord API,is token change or having rate limit?");} catch (Exception error){}
 
         Logger.getLogger("Teapot").info("JDA - Finished Loading!");
 
