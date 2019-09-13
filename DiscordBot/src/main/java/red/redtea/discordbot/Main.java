@@ -113,6 +113,7 @@ public class Main {
         jda.addEventListener(new Ping());
         jda.addEventListener(new Stop());
 
+        Logger.getLogger("Teapot").info("all Command has been loaded!")
         Logger.getLogger("Teapot").info("Teapot has been successfully started!");
 
         //AutoChangeStatus
