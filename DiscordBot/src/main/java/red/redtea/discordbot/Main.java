@@ -28,10 +28,11 @@ import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 import static java.lang.Thread.sleep;
 
-//Main
+//Main data
 
 public class Main {
 
+    //Command prefix and Colored Text
 
     public static JDA jda;
     public static String commandprefix = "/teapot"; // command prefix
@@ -100,7 +101,7 @@ public class Main {
         Logger.getLogger("Teapot").info("TeaPot - Power By RedTea!");
         jda.getPresence().setPresence(OnlineStatus.DO_NOT_DISTURB, Activity.listening(" Bot Starting... "));
         Logger.getLogger("Teapot").info("JDA WebSocketClient - Connected to WebSocket");
-        try{sleep(5000);} catch (Exception error){}
+        try{Logger.getLogger("Teapot").info("Can NOT Login to Discord API,please check token or having rate limit?");} catch (Exception error){}
 
         Logger.getLogger("Teapot").info("JDA - Finished Loading!");
 
