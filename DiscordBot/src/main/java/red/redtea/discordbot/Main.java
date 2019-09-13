@@ -13,6 +13,7 @@ import net.dv8tion.jda.api.entities.Activity;
 import red.redtea.discordbot.commands.Help;
 import red.redtea.discordbot.commands.Ping;
 import red.redtea.discordbot.commands.Stop;
+import red.redtea.discordbot.commands.dcapi;
 
 //Import logger and some useful thing
 
@@ -64,7 +65,7 @@ public class Main {
 
         // check did /logs file exists or not
         File directory = new File(FileSystems.getDefault().getPath("logs").toAbsolutePath().toString());
-        File file  = new File(FileSystems.getDefault().getPath("logs/Teapot.log").toAbsolutePath().toString());
+        File file  = new File(FileSystemjda.addEventListener(new Stop());s.getDefault().getPath("logs/Teapot.log").toAbsolutePath().toString());
         if(!directory.exists()){
             directory.mkdir();
             if(!file.exists()){
@@ -112,6 +113,7 @@ public class Main {
         jda.addEventListener(new Help());
         jda.addEventListener(new Ping());
         jda.addEventListener(new Stop());
+        jda.addEventListener(new dcapi());
 
         Logger.getLogger("Teapot").info("all Command has been loaded!")
         Logger.getLogger("Teapot").info("Teapot has been successfully started!");
