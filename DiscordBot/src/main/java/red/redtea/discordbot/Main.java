@@ -53,12 +53,13 @@ public class Main {
                 "    #    #####  #    # ######  #    #   #        ######    #      ######  #####  #    #    #    #####  #    #\n" +
                 "    #    #      ###### #       #    #   #        #     #   #      #   #   #      #    #    #    #      ######\n" +
                 "    #    #      #    # #       #    #   #        #     #   #      #    #  #      #    #    #    #      #    #\n" +
-                "    #    ###### #    # #        ####    #        ######    #      #     # ###### #####     #    ###### #    #\n"
+                "    #    ###### #    # #        ####    #        ######    #      #     # ###### #####     #    ###### #    #\n" +
+                " \n" +
+                " Power By RedTea And Colaian(SuperColaTyphoon) \n"
         );
         //Logger
         Logger logger = Logger.getLogger("Teapot");
         FileHandler fh;
-
         System.setProperty("java.util.logging.SimpleFormatter.format", "[%1$tF %1$tT] [%4$-2s] %5$s %n");
 
         // check did /logs file exists or not
