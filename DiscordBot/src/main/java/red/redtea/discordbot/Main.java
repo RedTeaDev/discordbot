@@ -46,7 +46,7 @@ public class Main {
     public static void main(String[] args) throws LoginException {
         System.out.print("Starting... \n");
         System.out.print("Power By RedTea,ColaIan\n");
-        try{sleep(100);} catch (Exception error){}
+        try{sleep(500);} catch (Exception error){}
         System.out.print(
                 " #######               ######                   ######           ######                #######\n" +
                 "    #    ######   ##   #     #  ####  #####      #     # #   #    #     # ###### #####     #    ######   ##\n" +
@@ -94,14 +94,15 @@ public class Main {
             e.printStackTrace();
         }
 
+        Logger.getLogger("Teapot").info("loading libraries..");
 
         //JDA - Configuration For Token and EventListener
         jda = new JDABuilder(AccountType.BOT)
                 .setToken("NjEyNjM0NzU4NzQ0MTEzMTgy.XVl-lA.H0SMVa4WNwvK317PLoEbRusMxYI") // DO NOT SHOW THIS Token to other
                 .build();
         Logger.getLogger("Teapot").info("JDA - Login Successful!");
-        Logger.getLogger("Teapot").info("TeaPot - Power By RedTea!");
-        jda.getPresence().setPresence(OnlineStatus.DO_NOT_DISTURB, Activity.listening(" Bot Starting... "));
+        Logger.getLogger("Teapot").info("TeaPot - a Discord Bot make with Java!");
+        jda.getPresence().setPresence(OnlineStatus.DO_NOT_DISTURB, Activity.listening(" Bot Starting... | Loading command.. "));
         Logger.getLogger("Teapot").info("JDA WebSocketClient - Connected to WebSocket");
         try{Logger.getLogger("Teapot").warning("Can NOT Login to Discord API,is token change or having rate limit?");} catch (Exception error){}
 
