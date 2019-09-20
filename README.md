@@ -1,5 +1,6 @@
 # TeaPot 
-A Discord Bot make with Java!
+
+A Discord Bot make with Java-JDA!
 ----
 # How to use?
 
