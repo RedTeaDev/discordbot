@@ -8,14 +8,14 @@ import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.OnlineStatus;
 import net.dv8tion.jda.api.entities.Activity;
 
-//import TeaPot commands
+//import TeaPot commands,Please Do NOT REMOVE IT! it will cause Crash!
 
 import red.redtea.discordbot.commands.Help;
 import red.redtea.discordbot.commands.Ping;
 import red.redtea.discordbot.commands.Stop;
 import red.redtea.discordbot.commands.dcapi;
 
-//Import logger and some useful thing
+//Import logger and some useful thing,Remove it if you know what you are doing!
 
 import javax.security.auth.login.LoginException;
 import java.io.File;
@@ -29,7 +29,7 @@ import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 import static java.lang.Thread.sleep;
 
-//Main class
+//Main class,Remove will cause crash
 
 public class Main {
 
@@ -42,8 +42,8 @@ public class Main {
     public static String Color_GREEN = "\u001B[32m";  // Color Green
     public static String Color_PURPLE = "\u001B[35m"; // Color Purple
 
-
     public static void main(String[] args) throws LoginException {
+        system.out.print("Logging in... Please Wait,DO NOT TRUN OFF YOUR PC!")
         System.out.print("Starting... \n");
         System.out.print("Power By RedTea,ColaIan\n");
         try{sleep(500);} catch (Exception error){}
@@ -91,9 +91,9 @@ public class Main {
             logger.addHandler(fh);
             Formatter formatter = new Formatter();
             fh.setFormatter(formatter);
-        } catch (SecurityException e) {
+        } catch (SecurityException e) { //#NeedHelp What?! Security Exception? idk what is this... 
             e.printStackTrace();
-        } catch (IOException e) {
+        } catch (IOException e) { 
             e.printStackTrace();
         }
 
@@ -113,18 +113,20 @@ public class Main {
 
         Logger.getLogger("Teapot").info("loading EventLister...");
 
-        //EventListener (add Command here)
-        jda.addEventListener(new Help());
-        jda.addEventListener(new Ping());
-        jda.addEventListener(new Stop());
-        jda.addEventListener(new dcapi());
+        //EventListener (add Command Here when you create a new file)
+        //All command was saved at /Command file!
+        
+        jda.addEventListener(new Help());  // Command/Help.java
+        jda.addEventListener(new Ping());  // Command/Ping.java
+        jda.addEventListener(new Stop());  // Command/Stop.java
+        jda.addEventListener(new dcapi()); // Command/dcapi.java
 
         Logger.getLogger("Teapot").info("all Command has been loaded!")
         Logger.getLogger("Teapot").info("Teapot has been successfully started!");
 
         //AutoChangeStatus
 
-        while (true) { // change status
+        while (true) { // change status,every 10 sec!
             try{sleep(10000);} catch (Exception error){}
             jda.getPresence().setPresence(OnlineStatus.ONLINE, Activity.listening( jda.getGuilds().size() + " Server(s) |  /teapot help  |  redtea.red"));
             try{sleep(10000);} catch (Exception error){}
