@@ -2,7 +2,7 @@
 
 A Discord Bot make with Java-JDA!
 ----
-# How to use?
+# How To Use?
 
 **Windows**
 
@@ -12,7 +12,10 @@ A Discord Bot make with Java-JDA!
 
 `java -cp DiscordBot.jar red.redtea.discordbot.Main`
 
+----
 
-(require java 8 or higher)
+
+
+# (require java 8 or higher)
 
 ----
