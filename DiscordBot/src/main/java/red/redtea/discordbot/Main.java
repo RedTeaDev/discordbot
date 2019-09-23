@@ -8,14 +8,15 @@ import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.OnlineStatus;
 import net.dv8tion.jda.api.entities.Activity;
 
-//import TeaPot commands,Please Do NOT REMOVE IT! it will cause Crash!
+//import TeaPot commands,Please Do NOT REMOVE IT! it will cause Crash! 
+//WARN: Remove it will cause Crash
 
 import red.redtea.discordbot.commands.Help;
 import red.redtea.discordbot.commands.Ping;
 import red.redtea.discordbot.commands.Stop;
 import red.redtea.discordbot.commands.dcapi;
 
-//Import logger and some useful thing,Remove it if you know what you are doing!
+//Import logger and some useful thing,Don't Remove it unless you know what you are doing!
 
 import javax.security.auth.login.LoginException;
 import java.io.File;
@@ -29,7 +30,7 @@ import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 import static java.lang.Thread.sleep;
 
-//Main class,Remove will cause crash
+//Main class,Remove will cause Bug
 
 public class Main {
 
@@ -66,7 +67,7 @@ public class Main {
         // Set Logger Format
         System.setProperty("java.util.logging.SimpleFormatter.format", "[%1$tF %1$tT] [%4$-2s] %5$s %n");
 
-        // check did /logs file exists or not
+        // check did /logs file exists or not,if NOT,Create it
         File directory = new File(FileSystems.getDefault().getPath("logs").toAbsolutePath().toString());
         File file  = new File(FileSystemjda.addEventListener(new Stop());s.getDefault().getPath("logs/Teapot.log").toAbsolutePath().toString());
         if(!directory.exists()){
@@ -74,8 +75,8 @@ public class Main {
             if(!file.exists()){
                 file.getParentFile().mkdir();
                 try {
-                    file.createNewFile();
-                } catch (Exception e) {}
+                    file.createNewFile(); // Create a File,and rename it as /log
+                } catch (Exception e) {} 
             }
         }
 
@@ -101,7 +102,7 @@ public class Main {
 
         //JDA - Configuration For Token and EventListener
         jda = new JDABuilder(AccountType.BOT)
-                .setToken("NjEyNjM0NzU4NzQ0MTEzMTgy.XVl-lA.H0SMVa4WNwvK317PLoEbRusMxYI") // DO NOT SHOW THIS Token to other
+                .setToken("NjEyNjM0NzU4NzQ0MTEzMTgy.XVl-lA.H0SMVa4WNwvK317PLoEbRusMxYI") // DO NOT SHOW THIS Token to other,Everyone can login when you have your Token
                 .build();
         Logger.getLogger("Teapot").info("JDA - Login Successful!");
         Logger.getLogger("Teapot").info("TeaPot - a Discord Bot make with Java!");
