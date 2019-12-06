@@ -102,7 +102,11 @@ public class Main {
 
         //JDA - Configuration For Token and EventListener
         jda = new JDABuilder(AccountType.BOT)
-                .setToken("NjEyNjM0NzU4NzQ0MTEzMTgy.XVl-lA.H0SMVa4WNwvK317PLoEbRusMxYI") // DO NOT SHOW THIS Token to other,Everyone can login when you have your Token
+
+
+
+                .setToken("Replace here") // DO NOT SHOW THIS Token to other
+
                 .build();
         Logger.getLogger("Teapot").info("JDA - Login Successful!");
         Logger.getLogger("Teapot").info("TeaPot - a Discord Bot make with Java!");
