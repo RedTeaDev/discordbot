@@ -1,6 +1,9 @@
 # TeaPot 
 
-A Discord Bot make with Java-JDA!
+
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://github.com/lRedTeal/discordbot/)
+
+A Discord Bot make with Java-JDA! ( but it broken }
 ----
 # How To Use?
 
